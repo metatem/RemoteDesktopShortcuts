@@ -14,7 +14,7 @@ else
 
 $userName = Read-Host -Prompt "User Name"
 
-$content = Get-Content TEMPLATE.rdp
+$content = Get-Content template.rdp
 $content = $content.Replace("%ComputerName%", $computerName)
 $content = $content.Replace("%DomainName%", $domainName)
 $content = $content.Replace("%UserName%", $userName)
